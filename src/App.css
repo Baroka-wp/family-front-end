@@ -1,0 +1,67 @@
+body {
+  background-color: #f5f6fa;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
+
+.btn_blue {
+  background: #0290ff;
+  color: white;
+}
+
+.btn_green {
+  background: #025329;
+  color: white;
+}
+
+.input__search__person {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  gap: 12px;
+} 
+
+.input__search__person input[type="text"] {
+  outline: none;
+  border: 1px solid #025329;
+  width: 42%;
+  padding: 0 10px;
+}
+
+.input__search__person input[type="submit"] {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+} 
+
+.input__container {
+  /* center block */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
