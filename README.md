@@ -1,5 +1,5 @@
-# Book Store - React project
-The Bookstore is a website similar to the "Awesome Books" website built in the previous module. You will create an MVP version of it that allows you to: Display a list of books. Add a book. Remove a selected book. By building this application, I learn how to use React and Redux.
+# Family book  - React project
+Family book allow to user to search a family member and represente his genealogy.
 
 
 ## Built With
@@ -22,14 +22,13 @@ The Bookstore is a website similar to the "Awesome Books" website built in the p
 - Twitter: [IrotoriB](https://twitter.com/IrotoriB)
 - LinkedIn: [baroka](www.linkedin.com/in/baroka)
 
-👥 **Co Author : ADISA Hammed**
 
 ## Install
 ### Run the project in your local machine
 
 - Clone the repository
 ```
-  git clone https://github.com/Baroka-wp/react-book-store.git
+  git clone https://github.com/Baroka-wp/family-front-end.git
 
   cd Cubis
 ```
@@ -44,7 +43,7 @@ npm install
 ```
 npm start
 ```
-- Open your browzer and go to [localhost:8080](http://localhost:8080/)
+- Open your browzer and go to [localhost:3000](http://localhost:3000/)
 
 
 ### Run Linters tests
