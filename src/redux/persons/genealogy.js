@@ -1,9 +1,9 @@
 import {
-//   ADD_PERSON,
-  FETCH_PERSON_FAILLED,
-  FETCH_PERSON_SUCCESS,
-  FETCH_REQUEST,
-} from '../../api/api.person';
+  //   ADD_PERSON,
+  FETCH_GENEALOGY_FAILLED,
+  FETCH_GENEALOGY_SUCCESS,
+  FETCH_GENEALOGY_REQUEST,
+} from '../../api/api.genealogy';
 
 const initialState = {
   items: [],
@@ -11,18 +11,18 @@ const initialState = {
   error: null,
 };
 
-const personReducer = (state = initialState, action) => {
+const genealogyReducer = (state = initialState, action) => {
   switch (action.type) {
-    case FETCH_REQUEST:
+    case FETCH_GENEALOGY_REQUEST:
       return { ...state, loading: true };
-    case FETCH_PERSON_SUCCESS:
+    case FETCH_GENEALOGY_SUCCESS:
       return {
         ...state,
         items: action.payload,
         error: null,
         loading: false,
       };
-    case FETCH_PERSON_FAILLED:
+    case FETCH_GENEALOGY_FAILLED:
       return {
         ...state,
         error: action.payload,
@@ -33,4 +33,4 @@ const personReducer = (state = initialState, action) => {
   }
 };
 
-export default personReducer;
+export default genealogyReducer;

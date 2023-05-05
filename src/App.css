@@ -44,7 +44,7 @@ button {
 .input__search__person input[type="text"] {
   outline: none;
   border: 1px solid #025329;
-  width: 42%;
+  width: 100%;
   padding: 0 10px;
 }
 
@@ -56,12 +56,39 @@ button {
   outline: none;
 } 
 
+.input__search {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  gap: 12px;
+}
+
+.list__person {
+  width: 80%;
+}
+
 .input__container {
   /* center block */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -30%);
   height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
 
+.genealogy_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.genealogy_container svg .node:nth-of-type(1) text {
+  fill: #025329;
+  position: relative;
+  transform: translate(-10px, 15px);
 }
