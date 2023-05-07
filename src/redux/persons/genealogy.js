@@ -6,7 +6,10 @@ import {
 } from '../../api/api.genealogy';
 
 const initialState = {
-  items: [],
+  items: {
+    name: 'root',
+    children: [],
+  },
   loading: false,
   error: null,
 };

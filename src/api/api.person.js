@@ -25,3 +25,17 @@ export const fetchPersonByname = (name) => async (dispatch) => {
     dispatch(fetchPersonFailled(error));
   }
 };
+
+export const fetchDetails = (id) => async (dispatch) => {
+  dispatch(fetchPersonRequest());
+  try {
+    const response = await axios.get(`${url}/ancestors/${id}`, {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    dispatch(fetchPersonSuccess(response.data));
+  } catch (error) {
+    dispatch(fetchPersonFailled(error));
+  }
+};
